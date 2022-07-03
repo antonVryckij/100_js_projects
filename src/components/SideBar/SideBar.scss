@@ -1,0 +1,14 @@
+@import "../../styles/_variables.scss";
+
+.side-bar {
+  background: $light-gray;
+  flex-basis: 400px;
+  justify-content: center;
+  padding: 20px;
+
+  &__title {
+    margin-top: 60px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
