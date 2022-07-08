@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.projectInfo {
+  width: 450px;
+  min-width: 350px;
+  max-width: 450px;
+  background: $light-gray-3;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: $gray-2;
+  }
+}
