@@ -55,8 +55,4 @@ export const projects = [
     name: "Project 4",
     technologes: ["Vanilla JS", "HTML", "CSS"],
   },
-  {
-    name: ". . .",
-    technologes: [],
-  },
 ];
