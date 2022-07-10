@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import { Flex, Heading, Icon, HStack } from "@chakra-ui/react";
-import { BsInfoCircle } from "react-icons/bs";
+import {CurrentProjectContext} from '../App'
 
 import "./ProjectInfo.scss";
 
 export const ProjectInfo = () => {
+  const [context] = useContext(CurrentProjectContext)
+
   return (
     <Flex className="projectInfo">
       <HStack>
@@ -13,9 +16,8 @@ export const ProjectInfo = () => {
           size="lg"
           lineHeight="1.5"
         >
-          Project info
+          Project info - {context}
         </Heading>
-        {/* <Icon as={BsInfoCircle} w={7} h={7} color='gray.400'/> */}
       </HStack>
     </Flex>
   );
